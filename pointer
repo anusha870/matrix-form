@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+ main() {
+ 	int a[3][3];
+ 	int i,j,sum=0,*p;
+ 	printf("enter elements of 2d array");
+ 	for(i=0;i<3;i++){
+ 		for(j=0;j<3;j++){
+ 			scanf("%d",&a[i][j]);
+		 }
+	 }
+	 p=&a[0][0];
+	 printf("elements of 2d array");
+	 	for(i=0;i<3;i++){
+ 		for(j=0;j<3;j++){
+ 			printf("%d\t",*(p+(i*3)+j));
+ 		}
+ 		printf("\n");
+ 	}
+ 		for(i=0;i<3;i++){
+ 			for(j=0;j<3;j++){
+ 				if(i==j){
+ 				sum=sum+a[i][j];
+ 		}
+ 	}
+ }
+ 	printf("sum of diagonals :%d", sum);
+	return 0;
+}
